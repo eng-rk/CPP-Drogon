@@ -1,0 +1,53 @@
+# ======================
+# React / Node
+# ======================
+node_modules/
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+
+# ======================
+# VS Code
+# ======================
+.vscode/
+
+# ======================
+# C++ Build Files
+# ======================
+*.exe
+*.out
+*.o
+*.obj
+
+# Build folders
+build/
+x64/
+Debug/
+Release/
+
+# ======================
+# Visual Studio
+# ======================
+*.vcxproj*
+*.sln
+*.user
+*.filters
+
+# ======================
+# OS Files
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# Temporary files
+# ======================
+*.log
+*.tmp

@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0b1020;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 30px 15px;
+}
+
+.container {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 42px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.section {
+  margin-bottom: 35px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+.section h2 {
+  font-size: 22px;
+  margin-bottom: 18px;
+  color: #ffffff;
+}
+
+.form-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+input {
+  padding: 10px 12px;
+  border: 1px solid #555;
+  border-radius: 6px;
+  background-color: #1c2235;
+  color: white;
+  font-size: 16px;
+  min-width: 180px;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #5c6bc0;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #7986cb;
+}
+
+.students-list {
+  margin-top: 20px;
+}
+
+.student-card {
+  background-color: #151b2e;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.student-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #9ecbff;
+  margin-bottom: 8px;
+}
+
+.student-id {
+  font-size: 14px;
+  color: #c9d6ff;
+  margin-bottom: 10px;
+}
+
+.course-list {
+  margin-left: 20px;
+}
+
+.course-list li {
+  margin-bottom: 6px;
+  color: #f1f1f1;
+}
+
+.empty-text {
+  color: #bbb;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+@media (max-width: 700px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input,
+  button {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+.success-msg {
+  color: #4caf50;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
