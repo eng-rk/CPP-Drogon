@@ -1,99 +1,201 @@
-# Student Course Management System
 
-## Project Description
+# 🎓 Student Course Management System (C++ Drogon + React)
 
-This is a simple console-based **Student Course Management System** developed using C++.
-The system allows users to manage student records, including adding students, assigning courses, and recording grades.
+A full-stack web application built using **C++ (Drogon Framework)** for the backend and **React (Vite)** for the frontend.
 
----
-
-## Features
-
-* Add new students
-* Display all students
-* Add courses and grades for each student
-* Simple and user-friendly menu
+This project demonstrates building a high-performance backend in C++ and connecting it with a modern frontend.
 
 ---
 
-## Technologies Used
+## 🚀 Features
 
-* C++
-* Standard Template Library (STL)
-
-  * Vector
-  * Pair
+- ➕ Add new students
+- 📋 View all students
+- 📚 Add courses with grades
+- 🔄 Real-time UI updates
+- 🌐 REST API using Drogon
+- ⚡ Fast frontend with React + Vite
 
 ---
 
-## Project Structure
+## 🛠️ Tech Stack
+
+### 🔹 Backend
+- C++
+- Drogon Framework
+- JsonCpp
+- vcpkg
+
+### 🔹 Frontend
+- React (Vite)
+- JavaScript
+- CSS
+
+---
+
+## 📂 Project Structure
 
 ```
- Project Folder
-│── main.cpp
-│── Student.cpp
-│── Student.h
-```
+
+FinalProjectC++react/
+│
+├── backend/
+│   ├── main.cpp
+│   ├── Student.h
+│   ├── Student.cpp
+│   ├── StudentManager.h
+│   └── StudentManager.cpp
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   ├── package.json
+│   └── vite.config.js
+│
+├── README.md
+└── .gitignore
+
+````
 
 ---
 
-## Requirements
+## ⚙️ How to Run
 
-* C++ Compiler (GCC / MinGW / Visual Studio)
-* Any IDE (CodeBlocks, VS Code, Visual Studio)
+### 1️⃣ Backend (C++)
 
----
-
-## How to Run
-
-### 1. Compile the project:
+Requirements:
+- Visual Studio (C++ Build Tools)
+- vcpkg installed
 
 ```bash
-g++ main.cpp Student.cpp -o project
-```
+cd backend
+````
 
-### 2. Run the program:
+Compile:
 
 ```bash
-./project
+cl /std:c++17 /EHsc main.cpp Student.cpp StudentManager.cpp ^
+/I D:\vcpkg\installed\x64-windows\include ^
+/link /LIBPATH:D:\vcpkg\installed\x64-windows\lib ^
+drogon.lib trantor.lib jsoncpp.lib
+```
+
+Run:
+
+```bash
+main.exe
+```
+
+Server:
+
+```
+http://127.0.0.1:8080
 ```
 
 ---
 
-## Sample Usage
+### 2️⃣ Frontend (React)
 
-```
-*** Student Course Management System ***
-1. Add Student
-2. Display Students
-3. Add Course and Grade for Student
-4. Exit
+```bash
+cd frontend
+npm install
+npm run dev
 ```
 
----
+Open:
 
-## Limitations
-
-* Data is not saved permanently (no file or database)
-* Console-based interface only
-
----
-
-## Future Improvements
-
-* Add file storage (save/load data)
-* Add GUI (Graphical Interface)
-* Search and delete student
-* Edit student data
+```
+http://localhost:5173
+```
 
 ---
 
-## Author
+## 🔗 API Endpoints
 
-Rowan Khalil
+### 📥 Get Students
+
+```
+GET /students
+```
 
 ---
 
-## Submission Date
+### ➕ Add Student
 
-17/3/2026
+```
+POST /students
+```
+
+```json
+{
+  "name": "Ahmed"
+}
+```
+
+---
+
+### ➕ Add Course
+
+```
+POST /students/{id}/courses
+```
+
+```json
+{
+  "courseName": "Math",
+  "grade": 90
+}
+```
+
+---
+
+## 🧪 Testing
+
+* Postman
+* Browser (GET requests)
+
+---
+
+## ⚠️ Notes
+
+* Backend must be running first
+* CORS enabled for frontend connection
+* Data stored in memory (no database yet)
+
+---
+
+## 🔮 Future Improvements
+
+* 🗄️ MongoDB integration
+* ✏️ Update/Delete features
+* 🔐 Authentication
+* 🎨 UI enhancements
+* 📊 Dashboard
+
+---
+
+## 👩‍💻 Author
+
+**Rowan Khalil**
+
+```
+
+---
+
+# 💥 لو عايزة تبقى جامدة جدًا (نصيحة)
+ضيفي في README:
+
+## 📸 Screenshots
+اعملي screenshot:
+- إضافة طالب
+- عرض الطلاب
+
+---
+
+# 🔥 بصراحة
+المشروع ده:
+👉 قوي جدًا على GitHub  
+👉 ينفع Portfolio  
+👉 ويبين إنك فاهم Backend + Frontend 👏
+
+
